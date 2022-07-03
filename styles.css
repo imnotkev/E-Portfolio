@@ -718,6 +718,10 @@ footer {
         transform: scale(1);
         transition: none;
     }
+
+    .project--wrapper {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
