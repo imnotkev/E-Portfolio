@@ -152,6 +152,7 @@ nav,
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
+    z-index: 2;
 }
 
 .mail__btn {
@@ -245,7 +246,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 55;
 }
 
 .header__title {
@@ -482,6 +482,7 @@ nav {
 
 #projects {
     background-color: #242424;
+    position: relative;
 }
 
 .section__title {
@@ -551,7 +552,6 @@ footer {
 .shape--1 {
     top: 15vh;
     left: 50vw;
-    filter: invert(96%) sepia(98%) saturate(4054%) hue-rotate(313deg) brightness(103%) contrast(94%);
 }
 
 .shape--2 {
@@ -573,13 +573,11 @@ footer {
 .shape--5 {
     top: 50vh;
     left: 80vw;
-    filter: invert(96%) sepia(98%) saturate(4054%) hue-rotate(313deg) brightness(103%) contrast(94%);
 }
 
 .shape--6 {
     top: 80vh;
     left: 15vw;
-    filter: invert(96%) sepia(98%) saturate(4054%) hue-rotate(313deg) brightness(103%) contrast(94%);
 }
 
 .shape--7 {
