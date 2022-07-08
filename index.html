@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>imnotkev | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./assets/logo.png">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/aff5e32dc8.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -62,7 +63,9 @@
     </a>
     <div class="modal">
       <div class="modal__half modal__about">
-        <i class="fas fa-times modal__exit--mobile click--no-bg" onclick="toggleModal()"></i>
+        <div class="modal__exit--mobile">
+          <i class="fas fa-times click--no-bg" onclick="toggleModal()"></i>
+        </div>
         <h3 class="modal__title modal__title--about">A bit more about me..</h3>
         <h4 class="modal__sub-title modal__sub-title--about">
           Frontend Software Engineer.
@@ -98,7 +101,9 @@
         </div>
       </div>
       <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit click--no-bg" onclick="toggleModal()"></i>
+        <div class="modal__exit">
+          <i class="fas fa-times click--no-bg" onclick="toggleModal()"></i>
+        </div>
         <h3 class="modal__title">..Lets have a chat!</h3>
         <h4 class="modal__sub-title">I'm currently open to new opportunities.</h4>
         <form id="contact__form" action="" onsubmit="contact(event)">
@@ -135,10 +140,6 @@
     <img src="./assets/bulbicon.png" class="shape shape--7">
     <img src="./assets/movieicon.png" class="shape shape--8">
   </section>
-
-  <!-- PROJECTS TAB COMING -->
-  <!-- PROJECTS TAB COMING -->
-  <!-- PROJECTS TAB COMING -->
   <section id="projects">
     <div class="container">
       <div class="row">
@@ -148,30 +149,42 @@
         <div class="project__list">
           <div class="project--wrapper">
             <div class="project">
-              <img src="./assets/aurora-film-showcase.png" class="project__img">
-              <div class="project__btns">
-                <div class="project__btn--demo">
-                  <a class="btn" href="https://imnotkev.github.io/Movie-Browser/index.html" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                  <span class="btn--demo">DEMO</span>
-                </div>
-                <div class="project__btn--code">
-                  <a class="btn project__btn--code" href="https://github.com/imnotkev/Movie-Browser" target="_blank"><i class="fa-solid fa-code"></i></a>
-                  <div class="btn--code">CODE</div>
+              <figure class="project__img--wrapper">
+                <img src="./assets/aurora-film-showcase.png" class="project__img">
+              </figure>
+              <div class="project__desc">
+                <h2 class="project__title text-hover--effect">Project 1</h2>
+                <p class="project__para text-hover--effect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellendus inventore quisquam commodi, explicabo officiis quas minus id placeat in!</p>
+                <div class="project__btns text-hover--effect">
+                  <div class="project__btn--demo">
+                    <a class="btn" href="https://imnotkev.github.io/Movie-Browser/index.html" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                    <span class="btn--demo">DEMO</span>
+                  </div>
+                  <div class="project__btn--code">
+                    <a class="btn project__btn--code" href="https://github.com/imnotkev/Movie-Browser" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <div class="btn--code">CODE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="project--wrapper">
             <div class="project">
-              <img src="./assets/juicewrld-store-showcase.png" class="project__img">
-              <div class="project__btns">
-                <div class="project__btn--demo">
-                  <a class="btn" href="https://imnotkev.github.io/E-commerce-store-mock-up/index.html" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                  <span class="btn--demo">DEMO</span>
-                </div>
-                <div class="project__btn--code">
-                  <a class="btn project__btn--code" href="https://github.com/imnotkev/E-commerce-store-mock-up" target="_blank"><i class="fa-solid fa-code"></i></a>
-                  <div class="btn--code">CODE</div>
+              <figure class="project__img--wrapper">
+                <img src="./assets/juicewrld-store-showcase.png" class="project__img">
+              </figure>
+              <div class="project__desc">
+                <h2 class="project__title text-hover--effect">Project 2</h2>
+                <p class="project__para text-hover--effect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellendus inventore quisquam commodi, explicabo officiis quas minus id placeat in!</p>
+                <div class="project__btns text-hover--effect">
+                  <div class="project__btn--demo">
+                    <a class="btn" href="https://imnotkev.github.io/E-commerce-store-mock-up/index.html" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                    <span class="btn--demo">DEMO</span>
+                  </div>
+                  <div class="project__btn--code">
+                    <a class="btn project__btn--code" href="https://github.com/imnotkev/E-commerce-store-mock-up" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <div class="btn--code">CODE</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -180,9 +193,6 @@
       </div>
     </div>
   </section>
-  <!-- PROJECTS TAB COMING -->
-  <!-- PROJECTS TAB COMING -->
-  <!-- PROJECTS TAB COMING -->
   <footer>
     <div class="container">
       <div class="row footer__row">

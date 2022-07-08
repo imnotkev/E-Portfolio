@@ -477,11 +477,14 @@ nav {
     position: absolute;
     top: 30px;
     right: 40px;
-    color: #fff;
     font-size: 36px;
     z-index: 100;
     cursor: pointer;
     display: none;
+}
+
+.modal__exit--mobile i {
+    color: #fff;
 }
 
 /* PROJECTS  */
@@ -501,7 +504,6 @@ nav {
 
 .project--wrapper {
     width: 50%;
-    position: relative;
 }
 
 .project {
@@ -509,25 +511,68 @@ nav {
     overflow: hidden;
     margin: 0 32px 96px 32px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
 }
 
 .project:hover .project__img {
     transform: scale(1.05);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.project:hover .project__desc {
+    opacity: 1;
+    transform: translate(-50%, -50%);
 }
 
 .project__img {
     width: 100%;
     display: block;
+    transition: all 400ms ease;
+}
+
+.project__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 13, 5, 0.445);
+    padding: 24px;
+    opacity: 0;
+    transition: all 400ms ease;
+}
+
+.text-hover--effect {
+    transform: scale(0.7);
     transition: all 300ms ease;
-    position: relative;
+}
+
+.project:hover .text-hover--effect {
+    transform: scale(1);
+}
+
+.project__title {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.project__para {
+    color: #fff;
+    max-width: 400px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .project__btns {
     display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 66px;
+    
 }
 
 .btn {
@@ -535,6 +580,7 @@ nav {
     border: none;
     font-size: 16px;
     padding: 8px 12px;
+    margin: 0 4px;
     border: 1px solid #242424;
 }
 
@@ -553,22 +599,21 @@ nav {
 }
 
 .btn--demo {
-    position: absolute;
     left: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: all 300ms ease;
-    z-index: -1;
-    font-weight: 700;
 }
 
 .btn--code {
+    right: 0;
+}
+
+.btn--code, .btn--demo {
     position: absolute;
     bottom: 0;
     opacity: 0;
     transition: all 300ms ease;
     z-index: -1;
     font-weight: 700;
+    color: #fff;
 }
 
 .btn:hover {
@@ -581,7 +626,7 @@ nav {
 }
 
 .project__btn--code:hover .btn--code {
-    transform: translateX(50px);
+    transform: translateX(44px);
     opacity: 1;
 }
 
