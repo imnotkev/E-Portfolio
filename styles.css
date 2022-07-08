@@ -40,10 +40,6 @@ p {
     font-size: 16px;
 }
 
-button {
-    cursor: pointer;
-}
-
 input,
 textarea {
     width: 100%;
@@ -531,7 +527,7 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 55px;
+    bottom: 66px;
 }
 
 .btn {
@@ -542,8 +538,13 @@ nav {
     border: 1px solid #242424;
 }
 
+.btn:hover i {
+    color: #fff;
+}
+
 .btn i {
     color: #242424;
+    transition: all 300ms ease;
 }
 
 .project__btn--demo,
@@ -554,7 +555,7 @@ nav {
 .btn--demo {
     position: absolute;
     left: 0;
-    bottom: 8px;
+    bottom: 0;
     opacity: 0;
     transition: all 300ms ease;
     z-index: -1;
@@ -563,7 +564,7 @@ nav {
 
 .btn--code {
     position: absolute;
-    bottom: 8px;
+    bottom: 0;
     opacity: 0;
     transition: all 300ms ease;
     z-index: -1;
